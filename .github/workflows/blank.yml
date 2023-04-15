@@ -36,3 +36,8 @@ jobs:
           echo test, and deploy your project.
           ls
           pwd
+  create-cluster:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create k8s Kind Cluster
+        uses: helm/kind-action@v1.4.0
